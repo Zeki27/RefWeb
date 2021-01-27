@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# CS0628: New protected member declared in sealed class
+dotnet_diagnostic.CS0628.severity = error
+
+# IDE0055: Fix formatting
+dotnet_diagnostic.IDE0055.severity = error
