@@ -10,21 +10,24 @@ namespace RefWeb.Controllers
 {
     public class LanguageController : Controller
     {
+        public static string _lang = "hu";
         // GET: Language
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Change(String language)
+        public ActionResult Change(string language)
         {
-            if (!String.IsNullOrEmpty(language))
+            
+            if (!string.IsNullOrEmpty(language))
             {
                 Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
             }
             HttpCookie cookie = new HttpCookie("Languages");
             cookie.Value = language;
+            _lang = language;
             Response.Cookies.Add(cookie);
             return View("Index");
         }
