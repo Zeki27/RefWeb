@@ -117,20 +117,77 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="A1Category" xml:space="preserve">
+    <value>A1 Category</value>
+  </data>
   <data name="About" xml:space="preserve">
     <value>About</value>
+  </data>
+  <data name="AboutMe" xml:space="preserve">
+    <value>About me</value>
+  </data>
+  <data name="AboutMeStorie" xml:space="preserve">
+    <value>I usually spend my free time on sport, gaming, learning, developing my own projects and riding motorcycle. I use Visual Studio 2019 for my windows apps(C#) and websites(ASP.net), Unity3d for game developing and Blender for modelling and animating. I am curious about the new technologies. In my work I try to be as precise as I can. I love the challenges and I think I have good program solving skill. I try to learn everything on English in time I expand English knowledge too on my own. I learned C# so far, but I am interested in other languages too. I did some Java and PHP but I don’t have big knowledge in them.</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="April" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="ASP" xml:space="preserve">
+    <value>ASP Net</value>
+  </data>
+  <data name="August" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="Basic" xml:space="preserve">
+    <value>basic</value>
+  </data>
+  <data name="BCategory" xml:space="preserve">
+    <value>B Category</value>
+  </data>
+  <data name="BirthPlace" xml:space="preserve">
+    <value>Birthplace</value>
+  </data>
+  <data name="BitBucket" xml:space="preserve">
+    <value>Bit Bucket</value>
+  </data>
+  <data name="Blender" xml:space="preserve">
+    <value>Blender</value>
   </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
+  <data name="CSharp" xml:space="preserve">
+    <value>C#</value>
+  </data>
+  <data name="CSS" xml:space="preserve">
+    <value>CSS</value>
+  </data>
   <data name="CuriculumVitae" xml:space="preserve">
     <value>CuriculumVitae</value>
+  </data>
+  <data name="Currently" xml:space="preserve">
+    <value>Currently</value>
+  </data>
+  <data name="December" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="DrivingLicense" xml:space="preserve">
+    <value>Driving licenes</value>
   </data>
   <data name="email" xml:space="preserve">
     <value>E-mail</value>
   </data>
   <data name="English" xml:space="preserve">
     <value>English</value>
+  </data>
+  <data name="Experiences" xml:space="preserve">
+    <value>Experiences</value>
+  </data>
+  <data name="February" xml:space="preserve">
+    <value>February</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="flag16" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -139,25 +196,127 @@
   <data name="GamePage" xml:space="preserve">
     <value>GamePage</value>
   </data>
+  <data name="GitHub" xml:space="preserve">
+    <value>GitHub</value>
+  </data>
+  <data name="Graduation" xml:space="preserve">
+    <value>Graduation</value>
+  </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="HTML" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="Hungary" xml:space="preserve">
+    <value>Hungarian</value>
+  </data>
+  <data name="January" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="Java" xml:space="preserve">
+    <value>Java</value>
+  </data>
+  <data name="July" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="June" xml:space="preserve">
+    <value>June</value>
   </data>
   <data name="Languagee" xml:space="preserve">
     <value>English</value>
   </data>
+  <data name="LanguageExp" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="March" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="Mohacs" xml:space="preserve">
+    <value>Mohacs</value>
+  </data>
   <data name="MyEmail" xml:space="preserve">
     <value>snagyzsolt97@gmail.com</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
   </data>
   <data name="News" xml:space="preserve">
     <value>News</value>
   </data>
+  <data name="November" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="October" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="PData" xml:space="preserve">
+    <value>Personal Data</value>
+  </data>
   <data name="Phone" xml:space="preserve">
     <value>Phone</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="PHP" xml:space="preserve">
+    <value>PHP</value>
+  </data>
+  <data name="PSZCRadnoti" xml:space="preserve">
+    <value>Baranya Megyei SZC Mohácsi Radnóti Miklós Technikum és Szakképző Iskola</value>
+  </data>
+  <data name="PSZCSimonyi" xml:space="preserve">
+    <value>Pécsi SzC Simonyi Károly Szakgimnáziuma és Szakközépiskolája</value>
+  </data>
+  <data name="September" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="SNZS" xml:space="preserve">
+    <value>Zsolt S Nagy</value>
   </data>
   <data name="SoftwarePage" xml:space="preserve">
     <value>SoftwarePage</value>
   </data>
+  <data name="SQL" xml:space="preserve">
+    <value>SQL</value>
+  </data>
+  <data name="Studies" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="SWDeveloper" xml:space="preserve">
+    <value>Software developer</value>
+  </data>
+  <data name="SysAdmin" xml:space="preserve">
+    <value>System administrator</value>
+  </data>
+  <data name="Tankerulet" xml:space="preserve">
+    <value>Tankerület</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Unity" xml:space="preserve">
+    <value>Unity3d</value>
+  </data>
+  <data name="Valid" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="Velder" xml:space="preserve">
+    <value>Velder</value>
+  </data>
+  <data name="VIDIAN" xml:space="preserve">
+    <value>Vidian</value>
+  </data>
+  <data name="VisualStudio" xml:space="preserve">
+    <value>Visual Studio 2019</value>
+  </data>
   <data name="WebPage" xml:space="preserve">
     <value>WebPage</value>
+  </data>
+  <data name="Workplaces" xml:space="preserve">
+    <value>Work experience</value>
   </data>
 </root>

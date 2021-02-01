@@ -3,63 +3,64 @@
 }
 <h1>@Html.Label(RefWeb.Resources.Language.CuriculumVitae)</h1>
 
-<h3>Név: S.Nagy Zsolt</h3>
-<h3>Személyes adatok:</h3>
+<h3>@Html.Label(RefWeb.Resources.Language.Name): @Html.Raw(RefWeb.Resources.Language.SNZS)</h3>
+<h3>@Html.Label(RefWeb.Resources.Language.PData):</h3>
 <ul>
-    <li>Születési hely, idő: Mohács, 1997.02.27.</li>
-    <li> Cím: 7759 Lánycsók Dózsa György utca 36</li>
-    <li>Telefonszám: +36 30 188 6067</li>
-    <li>Email: snagyzsolt97@gmail.com</li>
+    <li>@Html.Raw(RefWeb.Resources.Language.BirthPlace), @Html.Label(RefWeb.Resources.Language.Time): Mohács, 1997.02.27.</li>
+    <li> @Html.Raw(RefWeb.Resources.Language.Address): 7759 Lánycsók Dózsa György utca 36</li>
+    <li>@Html.Raw(RefWeb.Resources.Language.PhoneNumber): +36 30 188 6067</li>
+    <li>@Html.Raw(RefWeb.Resources.Language.email): snagyzsolt97@gmail.com</li>
 </ul>
-<h3>Tanulmányok:</h3>
-<ul>
-    <li>
-        <p>2011. szeptember - 2015. június</p>
-        <p>PSZC Mohácsi Radnóti Miklós Szakgimnáziuma és Szakközépiskolája rendészet</p>
-        <p>Érettségi</p>
-    </li>
-    <li>
-        <p>2016. szeptember - 2017. május</p>
-        <p>PSZC Mohácsi Radnóti Miklós Szakgimnáziuma és Szakközépiskolája</p>
-        <p>hegesztő szakma</p>
-    </li>
-    <li>
-        <p>2017. szeptember - 2019. október</p>
-        <p>Pécsi SZC Simonyi Károly Szakgimnáziuma és Szakközépiskola</p>
-        <p>Szoftverfejlesztő technikus</p>
-    </li>
-</ul>
-<h3>Munkahelyek:</h3>
+<h3>@Html.Label(RefWeb.Resources.Language.Studies):</h3>
 <ul>
     <li>
-        <p>2019.december - 2020.június</p>
-        <p>Mohács Tankerület</p>
-        <p>Munkakör: Rendszergazda</p>
+        <p>2011. @Html.Raw(RefWeb.Resources.Language.September) - 2015. @Html.Raw(RefWeb.Resources.Language.June)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.PSZCRadnoti)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.Graduation)</p>
     </li>
     <li>
-        <p>2020.június - jelenleg</p>
-        <p>Újház Gráf Trans</p>
-        <p>Munkakör: Rendszergazda</p>
+        <p>2016. @Html.Raw(RefWeb.Resources.Language.September) - 2017. @Html.Raw(RefWeb.Resources.Language.May)</p> 
+        <p>@Html.Raw(RefWeb.Resources.Language.PSZCRadnoti)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.Velder)</p>
+    </li>
+    <li>
+        <p>2017. @Html.Raw(RefWeb.Resources.Language.September) - 2019.@Html.Raw(RefWeb.Resources.Language.October)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.PSZCSimonyi)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.SWDeveloper)</p>
     </li>
 </ul>
-<h3>Ismereteim:</h3>
+<h3>@Html.Raw(RefWeb.Resources.Language.Workplaces):</h3>
 <ul>
-    <li>C#, ASP.Net, MySQL, PHP, HTML, CSS</li>
-    <li>Visual Studio 2019, Unity3d, Blender 2.8, Visual Studio Code</li>
-    <li>GitHub, Bitbucket verziókezelő</li>
+    <li>
+        <p>2019.@Html.Raw(RefWeb.Resources.Language.December) - 2020.@Html.Raw(RefWeb.Resources.Language.June)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.Mohacs) @Html.Raw(RefWeb.Resources.Language.Tankerulet)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.SysAdmin)</p>
+    </li>
+    <li>
+        <p>2020.@Html.Raw(RefWeb.Resources.Language.June) - @Html.Raw(RefWeb.Resources.Language.Currently)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.VIDIAN)</p>
+        <p>@Html.Raw(RefWeb.Resources.Language.SysAdmin)</p>
+    </li>
 </ul>
-<h3>Gépjárművezetői engedély</h3>
+<h3>@Html.Label(RefWeb.Resources.Language.Experiences):</h3>
 <ul>
-    <li>B Kategória 		2016.április.20. 	Érvényes: 2025.február.27.</li>
-    <li>A1 Kategória 	2019.augusztus.01. 	Érvényes: 2025.február.27.</li>
+    <li>
+        @Html.Raw(RefWeb.Resources.Language.CSharp), @Html.Raw(RefWeb.Resources.Language.ASP), @Html.Raw(RefWeb.Resources.Language.Java), @Html.Raw(RefWeb.Resources.Language.PHP)
+        @Html.Raw(RefWeb.Resources.Language.HTML), @Html.Raw(RefWeb.Resources.Language.CSS)
+    </li>
+    <li>@Html.Raw(RefWeb.Resources.Language.VisualStudio), @Html.Raw(RefWeb.Resources.Language.Unity), @Html.Raw(RefWeb.Resources.Language.Blender)</li>
+    <li>@Html.Raw(RefWeb.Resources.Language.GitHub), @Html.Raw(RefWeb.Resources.Language.BitBucket)</li>
 </ul>
-<h3>Nyelvismeret:</h3>
-<p>Angol  szint: kezdő</p>
-<h3>Pár szó magamról:</h3>
+<h3>@Html.Label(RefWeb.Resources.Language.DrivingLicense)</h3>
+<ul>
+    <li>@Html.Raw(RefWeb.Resources.Language.BCategory)   |    2016.@Html.Raw(RefWeb.Resources.Language.April).20.  | @Html.Raw(RefWeb.Resources.Language.Valid): 2025.@Html.Raw(RefWeb.Resources.Language.February).27.</li>
+    <li>@Html.Raw(RefWeb.Resources.Language.A1Category)  |    2019.@Html.Raw(RefWeb.Resources.Language.August).01. | @Html.Raw(RefWeb.Resources.Language.Valid): 2025.@Html.Raw(RefWeb.Resources.Language.February).27.</li>
+</ul>
+<h3>@Html.Label(RefWeb.Resources.Language.LanguageExp):</h3>
+<p>@Html.Raw(RefWeb.Resources.Language.Languagee): @Html.Raw(RefWeb.Resources.Language.Basic)</p>
+
+<h3>@Html.Label(RefWeb.Resources.Language.AboutMe):</h3>
 <p>
-    Szabadidőmet többnyire saját projektjeim fejlesztésével és különböző módszerek, megoldások próbálgatásával töltöm egyéb hobbim űzése mellett. 
-    Visual Studio 2019-et használok winformos, webbes és Unity3d-s projektjeimhez. Szívesen tanulok és fejlődök. 
-    Törekszem az igényes és precíz munkára. Szeretem a kihívásokat és úgy gondolom, jó problémamegoldó képességgel rendelkezem. 
-    Angol nyelvismerettel rendelkezem folyamatosan fejlesztem a nyelvtudásom és tanulom a nyelvet.
+    @Html.Raw(RefWeb.Resources.Language.AboutMeStorie)
 </p>
     

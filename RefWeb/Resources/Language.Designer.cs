@@ -61,11 +61,119 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A1 Category.
+        /// </summary>
+        public static string A1Category {
+            get {
+                return ResourceManager.GetString("A1Category", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to About.
         /// </summary>
         public static string About {
             get {
                 return ResourceManager.GetString("About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About me.
+        /// </summary>
+        public static string AboutMe {
+            get {
+                return ResourceManager.GetString("AboutMe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I usually spend my free time on sport, gaming, learning, developing my own projects and riding motorcycle. I use Visual Studio 2019 for my windows apps(C#) and websites(ASP.net), Unity3d for game developing and Blender for modelling and animating. I am curious about the new technologies. In my work I try to be as precise as I can. I love the challenges and I think I have good program solving skill. I try to learn everything on English in time I expand English knowledge too on my own. I learned C# so far, bu [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string AboutMeStorie {
+            get {
+                return ResourceManager.GetString("AboutMeStorie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Address.
+        /// </summary>
+        public static string Address {
+            get {
+                return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to April.
+        /// </summary>
+        public static string April {
+            get {
+                return ResourceManager.GetString("April", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ASP Net.
+        /// </summary>
+        public static string ASP {
+            get {
+                return ResourceManager.GetString("ASP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to August.
+        /// </summary>
+        public static string August {
+            get {
+                return ResourceManager.GetString("August", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to basic.
+        /// </summary>
+        public static string Basic {
+            get {
+                return ResourceManager.GetString("Basic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to B Category.
+        /// </summary>
+        public static string BCategory {
+            get {
+                return ResourceManager.GetString("BCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Birthplace.
+        /// </summary>
+        public static string BirthPlace {
+            get {
+                return ResourceManager.GetString("BirthPlace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bit Bucket.
+        /// </summary>
+        public static string BitBucket {
+            get {
+                return ResourceManager.GetString("BitBucket", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blender.
+        /// </summary>
+        public static string Blender {
+            get {
+                return ResourceManager.GetString("Blender", resourceCulture);
             }
         }
         
@@ -79,11 +187,56 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to C#.
+        /// </summary>
+        public static string CSharp {
+            get {
+                return ResourceManager.GetString("CSharp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSS.
+        /// </summary>
+        public static string CSS {
+            get {
+                return ResourceManager.GetString("CSS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CuriculumVitae.
         /// </summary>
         public static string CuriculumVitae {
             get {
                 return ResourceManager.GetString("CuriculumVitae", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currently.
+        /// </summary>
+        public static string Currently {
+            get {
+                return ResourceManager.GetString("Currently", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to December.
+        /// </summary>
+        public static string December {
+            get {
+                return ResourceManager.GetString("December", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Driving licenes.
+        /// </summary>
+        public static string DrivingLicense {
+            get {
+                return ResourceManager.GetString("DrivingLicense", resourceCulture);
             }
         }
         
@@ -102,6 +255,24 @@ namespace RefWeb.Resources {
         public static string English {
             get {
                 return ResourceManager.GetString("English", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Experiences.
+        /// </summary>
+        public static string Experiences {
+            get {
+                return ResourceManager.GetString("Experiences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to February.
+        /// </summary>
+        public static string February {
+            get {
+                return ResourceManager.GetString("February", resourceCulture);
             }
         }
         
@@ -125,11 +296,83 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GitHub.
+        /// </summary>
+        public static string GitHub {
+            get {
+                return ResourceManager.GetString("GitHub", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Graduation.
+        /// </summary>
+        public static string Graduation {
+            get {
+                return ResourceManager.GetString("Graduation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
             get {
                 return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HTML.
+        /// </summary>
+        public static string HTML {
+            get {
+                return ResourceManager.GetString("HTML", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hungarian.
+        /// </summary>
+        public static string Hungary {
+            get {
+                return ResourceManager.GetString("Hungary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to January.
+        /// </summary>
+        public static string January {
+            get {
+                return ResourceManager.GetString("January", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Java.
+        /// </summary>
+        public static string Java {
+            get {
+                return ResourceManager.GetString("Java", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to July.
+        /// </summary>
+        public static string July {
+            get {
+                return ResourceManager.GetString("July", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to June.
+        /// </summary>
+        public static string June {
+            get {
+                return ResourceManager.GetString("June", resourceCulture);
             }
         }
         
@@ -143,11 +386,56 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string LanguageExp {
+            get {
+                return ResourceManager.GetString("LanguageExp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to March.
+        /// </summary>
+        public static string March {
+            get {
+                return ResourceManager.GetString("March", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to May.
+        /// </summary>
+        public static string May {
+            get {
+                return ResourceManager.GetString("May", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mohacs.
+        /// </summary>
+        public static string Mohacs {
+            get {
+                return ResourceManager.GetString("Mohacs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to snagyzsolt97@gmail.com.
         /// </summary>
         public static string MyEmail {
             get {
                 return ResourceManager.GetString("MyEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
             }
         }
         
@@ -161,11 +449,92 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to November.
+        /// </summary>
+        public static string November {
+            get {
+                return ResourceManager.GetString("November", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to October.
+        /// </summary>
+        public static string October {
+            get {
+                return ResourceManager.GetString("October", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personal Data.
+        /// </summary>
+        public static string PData {
+            get {
+                return ResourceManager.GetString("PData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Phone.
         /// </summary>
         public static string Phone {
             get {
                 return ResourceManager.GetString("Phone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone number.
+        /// </summary>
+        public static string PhoneNumber {
+            get {
+                return ResourceManager.GetString("PhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PHP.
+        /// </summary>
+        public static string PHP {
+            get {
+                return ResourceManager.GetString("PHP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Baranya Megyei SZC Mohácsi Radnóti Miklós Technikum és Szakképző Iskola.
+        /// </summary>
+        public static string PSZCRadnoti {
+            get {
+                return ResourceManager.GetString("PSZCRadnoti", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pécsi SzC Simonyi Károly Szakgimnáziuma és Szakközépiskolája.
+        /// </summary>
+        public static string PSZCSimonyi {
+            get {
+                return ResourceManager.GetString("PSZCSimonyi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to September.
+        /// </summary>
+        public static string September {
+            get {
+                return ResourceManager.GetString("September", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zsolt S Nagy.
+        /// </summary>
+        public static string SNZS {
+            get {
+                return ResourceManager.GetString("SNZS", resourceCulture);
             }
         }
         
@@ -179,11 +548,119 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SQL.
+        /// </summary>
+        public static string SQL {
+            get {
+                return ResourceManager.GetString("SQL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Education.
+        /// </summary>
+        public static string Studies {
+            get {
+                return ResourceManager.GetString("Studies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Software developer.
+        /// </summary>
+        public static string SWDeveloper {
+            get {
+                return ResourceManager.GetString("SWDeveloper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System administrator.
+        /// </summary>
+        public static string SysAdmin {
+            get {
+                return ResourceManager.GetString("SysAdmin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tankerület.
+        /// </summary>
+        public static string Tankerulet {
+            get {
+                return ResourceManager.GetString("Tankerulet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time.
+        /// </summary>
+        public static string Time {
+            get {
+                return ResourceManager.GetString("Time", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unity3d.
+        /// </summary>
+        public static string Unity {
+            get {
+                return ResourceManager.GetString("Unity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Valid.
+        /// </summary>
+        public static string Valid {
+            get {
+                return ResourceManager.GetString("Valid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Velder.
+        /// </summary>
+        public static string Velder {
+            get {
+                return ResourceManager.GetString("Velder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vidian.
+        /// </summary>
+        public static string VIDIAN {
+            get {
+                return ResourceManager.GetString("VIDIAN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Visual Studio 2019.
+        /// </summary>
+        public static string VisualStudio {
+            get {
+                return ResourceManager.GetString("VisualStudio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to WebPage.
         /// </summary>
         public static string WebPage {
             get {
                 return ResourceManager.GetString("WebPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Work experience.
+        /// </summary>
+        public static string Workplaces {
+            get {
+                return ResourceManager.GetString("Workplaces", resourceCulture);
             }
         }
     }
