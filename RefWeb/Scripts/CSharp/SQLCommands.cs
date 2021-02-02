@@ -9,6 +9,9 @@ namespace RefWeb.Scripts.CSharp
 {
     public class SQLCommands
     {
+        public static string newsHunTable = "myrefappnewshun";
+        public static string newsEngTable = "myrefappnewsen";
+        public static string newsTable = "myrefappnewsen";
         public static MySqlConnection dbConn;
         public static MySqlCommand command;
         public static MySqlDataReader reader;
@@ -16,9 +19,21 @@ namespace RefWeb.Scripts.CSharp
 
         public static List<RefWeb.Models.mdlNews> GetNews()
         {
+            switch (RefWeb.Controllers.LanguageController._lang)
+            {
+                case "hu":
+                    newsTable = newsHunTable;
+                    break;
+                case "en":
+                    newsTable = newsEngTable;
+                    break;
+                default:
+                    newsTable = newsEngTable;
+                    break;
+            }
             List<RefWeb.Models.mdlNews> sour = new List<Models.mdlNews>();
 
-            string query = "select * from myrefappnews";
+            string query = "select * from " + newsTable;
             dbConn = RefWeb.Scripts.CSharp.SQLConnection.NewSQLConn();
             command = new MySqlCommand(query, dbConn);
 
