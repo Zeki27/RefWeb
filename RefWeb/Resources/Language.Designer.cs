@@ -377,6 +377,15 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string LanguageC {
+            get {
+                return ResourceManager.GetString("LanguageC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
         public static string Languagee {
@@ -521,6 +530,24 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reason of this site.
+        /// </summary>
+        public static string ReasonOfSite {
+            get {
+                return ResourceManager.GetString("ReasonOfSite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I made this website and projects for learning, gaining experience and having for reference what can I do so far. And of course from hobby because I enjoy developing..
+        /// </summary>
+        public static string ReasonStorie {
+            get {
+                return ResourceManager.GetString("ReasonStorie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to September.
         /// </summary>
         public static string September {
@@ -530,7 +557,7 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zsolt S Nagy.
+        ///   Looks up a localized string similar to Zsolt S. Nagy.
         /// </summary>
         public static string SNZS {
             get {
@@ -652,6 +679,24 @@ namespace RefWeb.Resources {
         public static string WebPage {
             get {
                 return ResourceManager.GetString("WebPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome!.
+        /// </summary>
+        public static string Welcome {
+            get {
+                return ResourceManager.GetString("Welcome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hy! My name is Zsolt S. Nagy. I am a junior developer and this is my reference website what contains my CV and projects. I am updating it every time I do something new or some progress in my projects. Please look around..
+        /// </summary>
+        public static string WelcomeMessage {
+            get {
+                return ResourceManager.GetString("WelcomeMessage", resourceCulture);
             }
         }
         

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - S.Nagy Zsolt</title>
     @Styles.Render("~/Content/css")
-    @Styles.Render("~/Content/Style.css") 
+    <link href="~/Content/style.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -16,8 +16,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink(RefWeb.Resources.Language.About, "About", "Home")</li>
+                    <li>@Html.ActionLink(RefWeb.Resources.Language.CuriculumVitae, "About", "Home")</li>
                     <li>@Html.ActionLink(RefWeb.Resources.Language.Contact, "Contact", "Home")</li>
+                    <li>@Html.ActionLink(RefWeb.Resources.Language.News, "NewsPage", "Page")</li>
                     <li>@Html.ActionLink(RefWeb.Resources.Language.SoftwarePage, "SoftwarePage", "Page")</li>
                     <li>@Html.ActionLink(RefWeb.Resources.Language.WebPage, "WebPage", "Page")</li>
                     <li>@Html.ActionLink(RefWeb.Resources.Language.GamePage, "GamePage", "Page")</li>

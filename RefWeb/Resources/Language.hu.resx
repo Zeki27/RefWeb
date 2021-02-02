@@ -223,6 +223,9 @@
   <data name="June" xml:space="preserve">
     <value>Június</value>
   </data>
+  <data name="LanguageC" xml:space="preserve">
+    <value>Nyelv</value>
+  </data>
   <data name="Languagee" xml:space="preserve">
     <value>Magyar</value>
   </data>
@@ -271,11 +274,17 @@
   <data name="PSZCSimonyi" xml:space="preserve">
     <value>Pécsi SzC Simonyi Károly Szakgimnáziuma és Szakközépiskolája</value>
   </data>
+  <data name="ReasonOfSite" xml:space="preserve">
+    <value>Az oldal oka</value>
+  </data>
+  <data name="ReasonStorie" xml:space="preserve">
+    <value>Azért hoztam létre ezt az oldalt hogy tanuljak, tapasztalatot gyűjthessek és referenciám legyen az eddigi tudásomról. És persze hobbiból mert szeretek fejleszteni.</value>
+  </data>
   <data name="September" xml:space="preserve">
     <value>Szeptember</value>
   </data>
   <data name="SNZS" xml:space="preserve">
-    <value>S Nagy Zsolt</value>
+    <value>S. Nagy Zsolt</value>
   </data>
   <data name="SoftwarePage" xml:space="preserve">
     <value>Szoftverek</value>
@@ -315,6 +324,12 @@
   </data>
   <data name="WebPage" xml:space="preserve">
     <value>Weblapok</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Üdvözlöm!</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Üdv! S. Nagy Zsolt vagyok junior fejlesztő. Ez a referencia weblapom ami tartalmazza az önéletrajzomat és projektjeimet. Mindíg frissítem amint valami újat csinálok vagy haladok a projekjeimmel. Kérlek nézz körbe.</value>
   </data>
   <data name="Workplaces" xml:space="preserve">
     <value>Munkahelyek</value>

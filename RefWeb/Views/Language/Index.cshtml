@@ -1,8 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = RefWeb.Resources.Language.LanguageC;
 }
 
-<h2>Index</h2>
+<h2>@Html.Label(RefWeb.Resources.Language.LanguageC)</h2>
     <h3>@Html.ActionLink("English", "Change", "Language", new { language = "en" }, null)</h3>
     <h3>@Html.ActionLink("Magyar", "Change", "Language", new { language = "hu" }, null)</h3>

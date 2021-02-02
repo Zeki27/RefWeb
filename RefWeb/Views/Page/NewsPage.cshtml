@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = RefWeb.Resources.Language.News;
+}
+
+<div>
+    <h1 class="my-newsheader">@Html.Raw(RefWeb.Resources.Language.News):</h1>
+
+    @{
+        List<RefWeb.Models.mdlNews> lstnews = RefWeb.Scripts.CSharp.SQLCommands.GetNews();
+
+        foreach (RefWeb.Models.mdlNews n in lstnews)
+        {
+            <div>
+                <h3>@n.NewsName</h3>
+                <p>@n.NewsDate</p>
+                <h4>@n.NewsDescription</h4>
+            </div>
+            <hr />
+        }
+    }
+</div>

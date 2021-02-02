@@ -223,6 +223,9 @@
   <data name="June" xml:space="preserve">
     <value>June</value>
   </data>
+  <data name="LanguageC" xml:space="preserve">
+    <value>Language</value>
+  </data>
   <data name="Languagee" xml:space="preserve">
     <value>English</value>
   </data>
@@ -271,11 +274,17 @@
   <data name="PSZCSimonyi" xml:space="preserve">
     <value>Pécsi SzC Simonyi Károly Szakgimnáziuma és Szakközépiskolája</value>
   </data>
+  <data name="ReasonOfSite" xml:space="preserve">
+    <value>Reason of this site</value>
+  </data>
+  <data name="ReasonStorie" xml:space="preserve">
+    <value>I made this website and projects for learning, gaining experience and having for reference what can I do so far. And of course from hobby because I enjoy developing.</value>
+  </data>
   <data name="September" xml:space="preserve">
     <value>September</value>
   </data>
   <data name="SNZS" xml:space="preserve">
-    <value>Zsolt S Nagy</value>
+    <value>Zsolt S. Nagy</value>
   </data>
   <data name="SoftwarePage" xml:space="preserve">
     <value>SoftwarePage</value>
@@ -315,6 +324,12 @@
   </data>
   <data name="WebPage" xml:space="preserve">
     <value>WebPage</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Hy! My name is Zsolt S. Nagy. I am a junior developer and this is my reference website what contains my CV and projects. I am updating it every time I do something new or some progress in my projects. Please look around.</value>
   </data>
   <data name="Workplaces" xml:space="preserve">
     <value>Work experience</value>

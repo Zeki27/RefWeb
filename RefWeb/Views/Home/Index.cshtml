@@ -2,21 +2,33 @@
     ViewBag.Title = RefWeb.Resources.Language.Home;
 }
 
-<div>
-    <h2>@RefWeb.Resources.Language.News:</h2>
+
+<div class="my-header">
+    <h1>@Html.Label(RefWeb.Resources.Language.Welcome)</h1>
+    <p>@Html.Raw(RefWeb.Resources.Language.WelcomeMessage)</p>
 </div>
 
-@{
-    List<RefWeb.Models.mdlNews> lstnews = RefWeb.Scripts.CSharp.SQLCommands.GetNews();
+<div class="my-header">
+    <h3>@Html.Raw(RefWeb.Resources.Language.ReasonOfSite)</h3>
+    <p>@Html.Raw(RefWeb.Resources.Language.ReasonStorie)</p>
+</div>
 
-    foreach (RefWeb.Models.mdlNews n in lstnews)
-    {
-        <div>
-            <h4>@n.NewsName</h4>
-            <p>@n.NewsDate</p>
-            <h5>@n.NewsDescription</h5>
-        </div>
-        <hr/>
+<div>
+    <h2 class="my-header">@Html.ActionLink(RefWeb.Resources.Language.News, "NewsPage", "Page", new { @class = "my-newsheader" }):</h2>
+
+    @{
+        List<RefWeb.Models.mdlNews> lstnews = RefWeb.Scripts.CSharp.SQLCommands.GetNews();
+
+        foreach (RefWeb.Models.mdlNews n in lstnews)
+        {
+            <div>
+                <h3>@n.NewsName</h3>
+                <p>@n.NewsDate</p>
+                <h4>@n.NewsDescription</h4>
+            </div>
+            <hr />
+        }
     }
-}
+</div>
+
 

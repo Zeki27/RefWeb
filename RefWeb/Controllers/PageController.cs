@@ -28,5 +28,9 @@ namespace RefWeb.Controllers
             return View();
         }
 
+        public ActionResult NewsPage()
+        {
+            return View();
+        }
     }
 }
