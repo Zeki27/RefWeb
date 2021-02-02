@@ -19,7 +19,6 @@ namespace RefWeb.Controllers
 
         public ActionResult Change(string language)
         {
-            
             if (!string.IsNullOrEmpty(language))
             {
                 Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(language);

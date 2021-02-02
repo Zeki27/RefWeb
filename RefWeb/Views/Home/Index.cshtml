@@ -14,7 +14,7 @@
 </div>
 
 <div>
-    <h2 class="my-header">@Html.ActionLink(RefWeb.Resources.Language.News, "NewsPage", "Page", new { @class = "my-newsheader" }):</h2>
+    <h2 class="my-header">@Html.ActionLink(RefWeb.Resources.Language.News, "NewsPage", "Page", null, new { @class = "my-newsheader" }):</h2>
 
     @{
         List<RefWeb.Models.mdlNews> lstnews = RefWeb.Scripts.CSharp.SQLCommands.GetNews();
@@ -23,7 +23,7 @@
         {
             <div>
                 <h3>@n.NewsName</h3>
-                <p>@n.NewsDate</p>
+                <p>@n.NewsDate.ToShortDateString()</p>
                 <h4>@n.NewsDescription</h4>
             </div>
             <hr />

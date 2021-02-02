@@ -530,7 +530,7 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reason of this site.
+        ///   Looks up a localized string similar to The goal of this site.
         /// </summary>
         public static string ReasonOfSite {
             get {
@@ -539,7 +539,7 @@ namespace RefWeb.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to I made this website and projects for learning, gaining experience and having for reference what can I do so far. And of course from hobby because I enjoy developing..
+        ///   Looks up a localized string similar to I made this website and projects for learning, gaining experience and for reference. And of course from hobby because I enjoy developing..
         /// </summary>
         public static string ReasonStorie {
             get {
