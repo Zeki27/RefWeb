@@ -123,6 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\mdlNews.cs" />
+    <Compile Include="Models\mdlWebsites.cs" />
     <Compile Include="Resources\Language.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -204,6 +205,7 @@
     <Content Include="Views\Shared\_LanguagePartial.cshtml" />
     <Content Include="Views\Language\Index.cshtml" />
     <Content Include="Views\Page\NewsPage.cshtml" />
+    <Content Include="Views\Page\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
