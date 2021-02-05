@@ -19,40 +19,60 @@ namespace RefWeb.Scripts.CSharp
 
         public static List<RefWeb.Models.mdlNews> GetNews()
         {
-            switch (RefWeb.Controllers.LanguageController._lang)
-            {
-                case "hu":
-                    newsTable = newsHunTable;
-                    break;
-                case "en":
-                    newsTable = newsEngTable;
-                    break;
-                default:
-                    newsTable = newsEngTable;
-                    break;
-            }
             List<RefWeb.Models.mdlNews> sour = new List<Models.mdlNews>();
 
-            string query = "select * from " + newsTable;
+            string query = "select * from myrefappnews";
             dbConn = RefWeb.Scripts.CSharp.SQLConnection.NewSQLConn();
             command = new MySqlCommand(query, dbConn);
 
             dbConn.Open();
-
             reader = command.ExecuteReader();
 
             while (reader.Read())
             {
                 int id = int.Parse(reader["myrefappnewsid"].ToString());
-                string nname = reader["myrefappnewsname"].ToString();
+                string nnamehun = reader["myrefappnewsnamehun"].ToString();
+                string nnameeng = reader["myrefappnewsnameeng"].ToString();
                 DateTime ndate = DateTime.Parse(reader["myrefappnewsdate"].ToString());
-                string ndesc = reader["myrefappnewsdescription"].ToString();
+                string ndeschun = reader["myrefappnewsdeschun"].ToString();
+                string ndesceng = reader["myrefappnewsdesceng"].ToString();
+                int userid = int.Parse(reader["myrefappnewsuserid"].ToString());
 
-                RefWeb.Models.mdlNews news = new Models.mdlNews(id, nname, ndate, ndesc);
+                RefWeb.Models.mdlNews news = new Models.mdlNews(id, nnamehun, nnameeng, ndate, ndeschun, ndesceng, userid);
                 sour.Add(news);
             }
             dbConn.Close();
             return sour;
+        }
+
+
+        public static RefWeb.Models.mdlNews GetSingleNews(int newsid)
+        {
+            RefWeb.Models.mdlNews renews = new Models.mdlNews(1, "blank", "blank", DateTime.Now, "blank", "blank", 1);
+
+            string query = "select * from myrefappnews where myrefappnewsid = " + newsid;
+            dbConn = RefWeb.Scripts.CSharp.SQLConnection.NewSQLConn();
+            command = new MySqlCommand(query, dbConn);
+
+            dbConn.Open();
+            reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                int id = int.Parse(reader["myrefappnewsid"].ToString());
+                string nnamehun = reader["myrefappnewsnamehun"].ToString();
+                string nnameeng = reader["myrefappnewsnameeng"].ToString();
+                DateTime ndate = DateTime.Parse(reader["myrefappnewsdate"].ToString());
+                string ndeschun = reader["myrefappnewsdeschun"].ToString();
+                string ndesceng = reader["myrefappnewsdesceng"].ToString();
+                int userid = int.Parse(reader["myrefappnewsuserid"].ToString());
+
+                RefWeb.Models.mdlNews news = new Models.mdlNews(id, nnamehun, nnameeng, ndate, ndeschun, ndesceng, userid);
+                renews = news;
+            }
+            dbConn.Close();
+
+            return renews;
         }
     }
 }

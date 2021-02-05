@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    RefWeb.Models.mdlNews n = RefWeb.Scripts.CSharp.SQLCommands.GetSingleNews(Int32.Parse(Request.QueryString["nid"]));
+
+    switch (RefWeb.Controllers.LanguageController._lang)
+    {
+        case "hu":
+            <div>
+                <h3>@n.NewsNameHun</h3>
+                <p>@n.NewsDate.ToShortDateString()</p>
+                <h4>@n.NewsDescriptionHun</h4>
+            </div>
+            <hr />
+            break;
+        case "en":
+            <div>
+                <h3>@n.NewsNameEng</h3>
+                <p>@n.NewsDate.ToShortDateString()</p>
+                <h4>@n.NewsDescriptionEng</h4>
+            </div>
+            <hr />
+            break;
+        default:
+            break;
+    }
+}

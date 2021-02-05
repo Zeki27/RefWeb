@@ -8,16 +8,22 @@ namespace RefWeb.Models
     public class mdlNews
     {
         public int NewsId { get; private set; }
-        public string NewsName { get; private set; }
+        public string NewsNameHun { get; private set; }
+        public string NewsNameEng { get; private set; }
         public DateTime NewsDate { get; private set; }
-        public string NewsDescription { get; private set; }
+        public string NewsDescriptionHun { get; private set; }
+        public string NewsDescriptionEng { get; private set; }
+        public int NewsUserId { get; private set; }
 
-        public mdlNews(int nid, string nname, DateTime ndate, string ndesc)
+        public mdlNews(int nid, string nnamehun, string nnameeng, DateTime ndate, string ndeschun, string ndesceng, int nuserid)
         {
             NewsId = nid;
-            NewsName = nname;
+            NewsNameHun = nnamehun;
+            NewsNameEng = nnameeng;
             NewsDate = ndate;
-            NewsDescription = ndesc;
+            NewsDescriptionHun = ndeschun;
+            NewsDescriptionEng = ndesceng;
+            NewsUserId = nuserid;
         }
 
     }

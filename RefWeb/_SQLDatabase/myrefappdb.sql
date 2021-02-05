@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.3
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2021. Feb 02. 07:05
--- Kiszolgáló verziója: 10.4.14-MariaDB
--- PHP verzió: 7.2.34
+-- Létrehozás ideje: 2021. Feb 05. 11:28
+-- Kiszolgáló verziója: 10.4.17-MariaDB
+-- PHP verzió: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -26,44 +26,25 @@ USE `myrefappdb`;
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `myrefappnewsen`
+-- Tábla szerkezet ehhez a táblához `myrefappnews`
 --
 
-CREATE TABLE `myrefappnewsen` (
+CREATE TABLE `myrefappnews` (
   `myrefappnewsid` int(11) NOT NULL,
-  `myrefappnewsname` varchar(30) NOT NULL,
+  `myrefappnewsnamehun` varchar(200) NOT NULL,
+  `myrefappnewsnameeng` varchar(200) NOT NULL,
   `myrefappnewsdate` date NOT NULL,
-  `myrefappnewsdescription` varchar(10000) NOT NULL
+  `myrefappnewsdeschun` mediumtext NOT NULL,
+  `myrefappnewsdesceng` mediumtext NOT NULL,
+  `myrefappnewsuserid` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- A tábla adatainak kiíratása `myrefappnewsen`
+-- A tábla adatainak kiíratása `myrefappnews`
 --
 
-INSERT INTO `myrefappnewsen` (`myrefappnewsid`, `myrefappnewsname`, `myrefappnewsdate`, `myrefappnewsdescription`) VALUES
-(1, 'First new', '2021-02-01', 'Test'),
-(2, 'Second Test New', '1997-02-27', 'I was born');
-
--- --------------------------------------------------------
-
---
--- Tábla szerkezet ehhez a táblához `myrefappnewshun`
---
-
-CREATE TABLE `myrefappnewshun` (
-  `myrefappnewsid` int(11) NOT NULL,
-  `myrefappnewsname` varchar(30) NOT NULL,
-  `myrefappnewsdate` date NOT NULL,
-  `myrefappnewsdescription` varchar(10000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- A tábla adatainak kiíratása `myrefappnewshun`
---
-
-INSERT INTO `myrefappnewshun` (`myrefappnewsid`, `myrefappnewsname`, `myrefappnewsdate`, `myrefappnewsdescription`) VALUES
-(3, 'Első hír', '2021-02-01', 'Teszt'),
-(4, 'Második teszt hír', '1997-02-27', 'megszülettem');
+INSERT INTO `myrefappnews` (`myrefappnewsid`, `myrefappnewsnamehun`, `myrefappnewsnameeng`, `myrefappnewsdate`, `myrefappnewsdeschun`, `myrefappnewsdesceng`, `myrefappnewsuserid`) VALUES
+(1, 'Első', 'First', '2021-02-05', 'Hír', 'News', 1);
 
 -- --------------------------------------------------------
 
@@ -111,16 +92,11 @@ INSERT INTO `myrefappusers` (`user_id`, `username`, `user_e_mail`, `password`, `
 --
 
 --
--- A tábla indexei `myrefappnewsen`
+-- A tábla indexei `myrefappnews`
 --
-ALTER TABLE `myrefappnewsen`
-  ADD PRIMARY KEY (`myrefappnewsid`);
-
---
--- A tábla indexei `myrefappnewshun`
---
-ALTER TABLE `myrefappnewshun`
-  ADD PRIMARY KEY (`myrefappnewsid`);
+ALTER TABLE `myrefappnews`
+  ADD PRIMARY KEY (`myrefappnewsid`),
+  ADD KEY `myrefappnewsuserid` (`myrefappnewsuserid`);
 
 --
 -- A tábla indexei `myrefapproles`
@@ -140,16 +116,10 @@ ALTER TABLE `myrefappusers`
 --
 
 --
--- AUTO_INCREMENT a táblához `myrefappnewsen`
+-- AUTO_INCREMENT a táblához `myrefappnews`
 --
-ALTER TABLE `myrefappnewsen`
-  MODIFY `myrefappnewsid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT a táblához `myrefappnewshun`
---
-ALTER TABLE `myrefappnewshun`
-  MODIFY `myrefappnewsid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `myrefappnews`
+  MODIFY `myrefappnewsid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT a táblához `myrefapproles`
@@ -166,6 +136,12 @@ ALTER TABLE `myrefappusers`
 --
 -- Megkötések a kiírt táblákhoz
 --
+
+--
+-- Megkötések a táblához `myrefappnews`
+--
+ALTER TABLE `myrefappnews`
+  ADD CONSTRAINT `myrefappnews_ibfk_1` FOREIGN KEY (`myrefappnewsuserid`) REFERENCES `myrefappusers` (`user_id`);
 
 --
 -- Megkötések a táblához `myrefappusers`

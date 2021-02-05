@@ -11,12 +11,27 @@
 
         foreach (RefWeb.Models.mdlNews n in lstnews)
         {
-            <div>
-                <h3>@Html.ActionLink(n.NewsName, "Index", "Page", new { nid = n.NewsId }, null)</h3>
-                <p>@n.NewsDate.ToShortDateString()</p>
-                <h4>@n.NewsDescription</h4>
-            </div>
-            <hr />
+            switch (RefWeb.Controllers.LanguageController._lang)
+            {
+                case "hu":
+                    <div>
+                        <h3>@Html.ActionLink(n.NewsNameHun, "SingleNewsPage", "Page", new { nid = n.NewsId }, null)</h3>
+                        <p>@n.NewsDate.ToShortDateString()</p>
+                        <h4>@n.NewsDescriptionHun</h4>
+                    </div>
+                    <hr />
+                    break;
+                case "en":
+                    <div>
+                        <h3>@Html.ActionLink(n.NewsNameEng, "SingleNewsPage", "Page", new { nid = n.NewsId }, null)</h3>
+                        <p>@n.NewsDate.ToShortDateString()</p>
+                        <h4>@n.NewsDescriptionEng</h4>
+                    </div>
+                    <hr />
+                    break;
+                default:
+                    break;
+            }
         }
     }
 </div>

@@ -32,5 +32,9 @@ namespace RefWeb.Controllers
         {
             return View();
         }
+        public ActionResult SingleNewsPage()
+        {
+            return View();
+        }
     }
 }

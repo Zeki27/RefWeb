@@ -205,7 +205,7 @@
     <Content Include="Views\Shared\_LanguagePartial.cshtml" />
     <Content Include="Views\Language\Index.cshtml" />
     <Content Include="Views\Page\NewsPage.cshtml" />
-    <Content Include="Views\Page\Index.cshtml" />
+    <Content Include="Views\Page\SingleNewsPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
