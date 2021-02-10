@@ -161,6 +161,7 @@
     <Content Include="Icons\flag24.png" />
     <Content Include="Icons\hungary16.png" />
     <Content Include="Icons\hungary24.png" />
+    <Content Include="Img\lang.jpg" />
     <Content Include="Img\pwp1.png" />
     <Content Include="Img\pwp2.png" />
     <Content Include="Img\pwp3.png" />
@@ -206,6 +207,9 @@
     <Content Include="Views\Language\Index.cshtml" />
     <Content Include="Views\Page\NewsPage.cshtml" />
     <Content Include="Views\Page\SingleNewsPage.cshtml" />
+    <Content Include="Views\Page\SingleWebPage.cshtml" />
+    <Content Include="Views\Page\SingleSoftwarePage.cshtml" />
+    <Content Include="Views\Page\SingleGamePage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

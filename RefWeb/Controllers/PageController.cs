@@ -36,5 +36,17 @@ namespace RefWeb.Controllers
         {
             return View();
         }
+        public ActionResult SingleWebPage()
+        {
+            return View();
+        }
+        public ActionResult SingleSoftwarePage()
+        {
+            return View();
+        }
+        public ActionResult SingleGamePage()
+        {
+            return View();
+        }
     }
 }

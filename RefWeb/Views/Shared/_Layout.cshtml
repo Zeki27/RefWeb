@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - S.Nagy Zsolt</title>
     @Styles.Render("~/Content/css")
-    <link href="~/Content/style.css" rel="stylesheet" />
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/style.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -26,6 +26,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!--<li><img src="@RefWeb.Resources.Language.flag16" /></li>-->
                     <li>@Html.ActionLink(RefWeb.Resources.Language.Languagee, "Index", "Language")</li>
+                    <li><img  src="~/Img/lang.jpg" class="langicon"/></li>
                 </ul>
             </div>
             </div>
