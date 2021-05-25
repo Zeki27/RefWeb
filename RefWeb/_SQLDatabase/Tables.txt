@@ -1,0 +1,15 @@
+Users
+userek:				myrefappusers
+roles(master, admin):		myrefapproles
+
+Web
+web news:			myrefappnews
+
+CV
+myrefapppersonalinf
+myrefappeduc
+myrefappworkp
+myrefappexp
+myrefapplang
+myrefappdrivlic
+myrefapppersonaldesc
