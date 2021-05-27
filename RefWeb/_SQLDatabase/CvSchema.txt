@@ -1,0 +1,63 @@
+Personail information
+myrefapppersonalinf
+pi_id			int
+pi_name			varchar
+pi_birthp		varchar
+pi_birtht		date
+pi_address		varchar
+pi_phonen		varchar
+pi_email		varchar
+pi_uid			fkey
+
+Education
+myrefappeduc
+edu_id			int
+edu_startdate		varchar
+ude_enddate		varchar
+edu_schoolnamehun	varchar
+edu_schoolnameeng	varchar
+edu_eduhun		varchar
+edu_edueng		varchar
+edu_uid			fkey
+
+WorkPlaces
+myrefappworkp
+wp_id			int
+wp_startdate		varchar
+wp_enddate		varchar
+wp_wpnamehun		varchar
+wp_wpnameeng		varchar
+wp_rolehun		varchar
+wp_roleeng		varchar
+wp_uid			fkey
+
+Experience
+myrefappexp
+exp_id			int
+exp_deschun		varchar
+exp_desceng		varchar
+exp_uid			fkey
+
+Driving License
+myrefappdrivlic
+dl_id			int
+dl_cat			varchar
+dl_acdate		date
+dl_expdate		date
+dl_uid			fkey
+
+Language
+myrefapplang
+lang_id			int
+lang_namehun		varchar
+lang_nameeng		varchar
+lang_levelhun		category
+lang_leveleng		category
+lang_uid		fkey
+
+Personal description
+myrefapppersonaldesc
+pd_id			int
+pd_deschun		varchar long
+pd_desceng		varchar long
+pd_uid			fkey
