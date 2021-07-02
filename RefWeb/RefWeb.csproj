@@ -118,8 +118,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\CVModels\mdlDrivLic.cs" />
+    <Compile Include="Models\CVModels\mdlEducation.cs" />
+    <Compile Include="Models\CVModels\mdlExp.cs" />
+    <Compile Include="Models\CVModels\mdlLang.cs" />
+    <Compile Include="Models\CVModels\mdlPersonalDesc.cs" />
     <Compile Include="Models\mdlNews.cs" />
+    <Compile Include="Models\CVModels\mdlPersonalInfo.cs" />
     <Compile Include="Models\mdlWebsites.cs" />
+    <Compile Include="Models\CVModels\mdlWork.cs" />
     <Compile Include="Resources\Language.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -140,6 +147,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Language.hu.resx</DependentUpon>
     </Compile>
+    <Compile Include="Scripts\CSharp\SQLCommandCV.cs" />
     <Compile Include="Scripts\CSharp\SQLCommands.cs" />
     <Compile Include="Scripts\CSharp\SQLConnection.cs" />
   </ItemGroup>
