@@ -1,66 +1,258 @@
 ﻿@{
     ViewBag.Title = RefWeb.Resources.Language.About;
 }
-<h1>@Html.Label(RefWeb.Resources.Language.CuriculumVitae)</h1>
 
-<h3>@Html.Raw(RefWeb.Resources.Language.Name): @Html.Raw(RefWeb.Resources.Language.SNZS)</h3>
-<h3>@Html.Raw(RefWeb.Resources.Language.PData):</h3>
-<ul>
-    <li>@Html.Raw(RefWeb.Resources.Language.BirthPlace), @Html.Raw(RefWeb.Resources.Language.Time): Mohács, 1997.02.27.</li>
-    <li> @Html.Raw(RefWeb.Resources.Language.Address): 7759 Lánycsók Dózsa György utca 36</li>
-    <li>@Html.Raw(RefWeb.Resources.Language.PhoneNumber): +36 30 188 6067</li>
-    <li>@Html.Raw(RefWeb.Resources.Language.email): snagyzsolt97@gmail.com</li>
-</ul>
-<h3>@Html.Label(RefWeb.Resources.Language.Studies):</h3>
-<ul>
-    <li>
-        <p>2011. @Html.Raw(RefWeb.Resources.Language.September) - 2015. @Html.Raw(RefWeb.Resources.Language.June)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.PSZCRadnoti)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.Graduation)</p>
-    </li>
-    <li>
-        <p>2016. @Html.Raw(RefWeb.Resources.Language.September) - 2017. @Html.Raw(RefWeb.Resources.Language.May)</p> 
-        <p>@Html.Raw(RefWeb.Resources.Language.PSZCRadnoti)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.Velder)</p>
-    </li>
-    <li>
-        <p>2017. @Html.Raw(RefWeb.Resources.Language.September) - 2019.@Html.Raw(RefWeb.Resources.Language.October)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.PSZCSimonyi)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.SWDeveloper)</p>
-    </li>
-</ul>
-<h3>@Html.Raw(RefWeb.Resources.Language.Workplaces):</h3>
-<ul>
-    <li>
-        <p>2019.@Html.Raw(RefWeb.Resources.Language.December) - 2020.@Html.Raw(RefWeb.Resources.Language.June)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.Mohacs) @Html.Raw(RefWeb.Resources.Language.Tankerulet)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.SysAdmin)</p>
-    </li>
-    <li>
-        <p>2020.@Html.Raw(RefWeb.Resources.Language.June) - @Html.Raw(RefWeb.Resources.Language.Currently)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.VIDIAN)</p>
-        <p>@Html.Raw(RefWeb.Resources.Language.SysAdmin)</p>
-    </li>
-</ul>
-<h3>@Html.Label(RefWeb.Resources.Language.Experiences):</h3>
-<ul>
-    <li>
-        @Html.Raw(RefWeb.Resources.Language.CSharp), @Html.Raw(RefWeb.Resources.Language.ASP), @Html.Raw(RefWeb.Resources.Language.Java), @Html.Raw(RefWeb.Resources.Language.PHP)
-        @Html.Raw(RefWeb.Resources.Language.HTML), @Html.Raw(RefWeb.Resources.Language.CSS)
-    </li>
-    <li>@Html.Raw(RefWeb.Resources.Language.VisualStudio), @Html.Raw(RefWeb.Resources.Language.Unity), @Html.Raw(RefWeb.Resources.Language.Blender)</li>
-    <li>@Html.Raw(RefWeb.Resources.Language.GitHub), @Html.Raw(RefWeb.Resources.Language.BitBucket)</li>
-</ul>
-<h3>@Html.Label(RefWeb.Resources.Language.DrivingLicense)</h3>
-<ul>
-    <li>@Html.Raw(RefWeb.Resources.Language.BCategory)   |    2016.@Html.Raw(RefWeb.Resources.Language.April).20.  | @Html.Raw(RefWeb.Resources.Language.Valid): 2025.@Html.Raw(RefWeb.Resources.Language.February).27.</li>
-    <li>@Html.Raw(RefWeb.Resources.Language.A1Category)  |    2019.@Html.Raw(RefWeb.Resources.Language.August).01. | @Html.Raw(RefWeb.Resources.Language.Valid): 2025.@Html.Raw(RefWeb.Resources.Language.February).27.</li>
-</ul>
-<h3>@Html.Label(RefWeb.Resources.Language.LanguageExp):</h3>
-<p>@Html.Raw(RefWeb.Resources.Language.Languagee): @Html.Raw(RefWeb.Resources.Language.Basic)</p>
 
-<h3>@Html.Label(RefWeb.Resources.Language.AboutMe):</h3>
-<p>
-    @Html.Raw(RefWeb.Resources.Language.AboutMeStorie)
-</p>
-    
+@{
+    #region Lists declaration
+    List<RefWeb.Models.CVModels.mdlPersonalInfo> pi = RefWeb.Scripts.CSharp.SQLCommandCV.GetPersonalInfo();
+    List<RefWeb.Models.CVModels.mdlEducation> edu = RefWeb.Scripts.CSharp.SQLCommandCV.GetEdu();
+    List<RefWeb.Models.CVModels.mdlWork> work = RefWeb.Scripts.CSharp.SQLCommandCV.GetWork();
+    List<RefWeb.Models.CVModels.mdlExp> exp = RefWeb.Scripts.CSharp.SQLCommandCV.GetExp();
+    List<RefWeb.Models.CVModels.mdlLang> lang = RefWeb.Scripts.CSharp.SQLCommandCV.GetLanguage();
+    List<RefWeb.Models.CVModels.mdlDrivLic> driv = RefWeb.Scripts.CSharp.SQLCommandCV.GetDrivli();
+    List<RefWeb.Models.CVModels.mdlPersonalDesc> pdesc = RefWeb.Scripts.CSharp.SQLCommandCV.GetPersDesc();
+    #endregion
+
+
+    //Personal Info
+    #region Personal info
+    <h1>@Html.Label(RefWeb.Resources.Language.CuriculumVitae)</h1>
+
+    foreach (RefWeb.Models.CVModels.mdlPersonalInfo n in pi)
+    {
+        switch (RefWeb.Controllers.LanguageController._lang)
+        {
+            case "hu":
+                <div>
+                    <h3>@Html.Raw(RefWeb.Resources.Language.Name): @n.PiName</h3>
+                    <h3>@Html.Raw(RefWeb.Resources.Language.PData):</h3>
+                    <ul>
+                        <li>@Html.Raw(RefWeb.Resources.Language.BirthPlace), @Html.Raw(RefWeb.Resources.Language.Time): @n.PiBirthP, @n.PiBirtht</li>
+                        <li> @Html.Raw(RefWeb.Resources.Language.Address): @n.PiAddress</li>
+                        <li>@Html.Raw(RefWeb.Resources.Language.PhoneNumber): @n.PiPhone</li>
+                        <li>@Html.Raw(RefWeb.Resources.Language.email): @n.PiEmail</li>
+                    </ul>
+                </div>
+                <hr />
+                break;
+            case "en":
+                <div>
+                    <h3>@Html.Raw(RefWeb.Resources.Language.Name): @n.PiName</h3>
+                    <h3>@Html.Raw(RefWeb.Resources.Language.PData):</h3>
+                    <ul>
+                        <li>@Html.Raw(RefWeb.Resources.Language.BirthPlace), @Html.Raw(RefWeb.Resources.Language.Time): @n.PiBirthP, @n.PiBirtht</li>
+                        <li> @Html.Raw(RefWeb.Resources.Language.Address): @n.PiAddress</li>
+                        <li>@Html.Raw(RefWeb.Resources.Language.PhoneNumber): @n.PiPhone</li>
+                        <li>@Html.Raw(RefWeb.Resources.Language.email): @n.PiEmail</li>
+                    </ul>
+                </div>
+                <hr />
+                break;
+            default:
+                break;
+        }
+    }
+    #endregion
+
+    //Studies
+    #region Studies
+    <h3>@Html.Label(RefWeb.Resources.Language.Studies):</h3>
+
+    foreach (RefWeb.Models.CVModels.mdlEducation ed in edu)
+    {
+        switch (RefWeb.Controllers.LanguageController._lang)
+        {
+            case "hu":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@ed.EduStart - @ed.EduEnd</p>
+                            <p>@ed.SchoolNameHun</p>
+                            <p>@ed.EduHun</p>
+                        </li>
+                    </ul>
+                    <br />
+                </div>
+                break;
+            case "en":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@ed.EduStart - @ed.EduEnd</p>
+                            <p>@ed.SchoolNameEng</p>
+                            <p>@ed.EduEng</p>
+                        </li>
+                    </ul>
+                    <br />
+                </div>
+                break;
+            default:
+                break;
+        }
+    }
+    <hr />
+    #endregion
+
+    //Workplaces
+    #region Workplace
+    <h3>@Html.Raw(RefWeb.Resources.Language.Workplaces):</h3>
+    foreach (RefWeb.Models.CVModels.mdlWork wr in work)
+    {
+        switch (RefWeb.Controllers.LanguageController._lang)
+        {
+            case "hu":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@wr.WorkStart - @wr.WorkEnd</p>
+                            <p>@wr.WorkNameHun</p>
+                            <p>@wr.RoleHun</p>
+                        </li>
+                    </ul>
+                    <br />
+                </div>
+                break;
+            case "en":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@wr.WorkStart - @wr.WorkEnd</p>
+                            <p>@wr.WorkNameEng</p>
+                            <p>@wr.RoleEng</p>
+                        </li>
+                    </ul>
+                    <br />
+                </div>
+                break;
+            default:
+                break;
+        }
+    }
+    <hr />
+    #endregion
+
+    //Experience
+    #region Experience
+    <h3>@Html.Label(RefWeb.Resources.Language.Experiences):</h3>
+
+    foreach (RefWeb.Models.CVModels.mdlExp ex in exp)
+    {
+        switch (RefWeb.Controllers.LanguageController._lang)
+        {
+            case "hu":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@ex.ExpHun</p>
+                        </li>
+                    </ul>
+                </div>
+                break;
+            case "en":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@ex.ExpEng</p>
+                        </li>
+                    </ul>
+                </div>
+                break;
+            default:
+                break;
+        }
+    }
+    <hr />
+    #endregion
+
+    //Language
+    #region Laguage
+    <h3>@Html.Label(RefWeb.Resources.Language.LanguageExp):</h3>
+
+    foreach (RefWeb.Models.CVModels.mdlLang la in lang)
+    {
+        switch (RefWeb.Controllers.LanguageController._lang)
+        {
+            case "hu":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@la.LangHun - @la.LangLevelHun</p>
+                        </li>
+                    </ul>
+                </div>
+                break;
+            case "en":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@la.LangEng - @la.LangLevelEng</p>
+                        </li>
+                    </ul>
+                </div>
+                break;
+            default:
+                break;
+        }
+    }
+    <hr />
+    #endregion
+
+    //Driving License
+    #region Driving License
+    <h3>@Html.Label(RefWeb.Resources.Language.DrivingLicense)</h3>
+
+    foreach (RefWeb.Models.CVModels.mdlDrivLic dl in driv)
+    {
+        switch (RefWeb.Controllers.LanguageController._lang)
+        {
+            case "hu":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@dl.DLCat</p>
+                        </li>
+                    </ul>
+                </div>
+                break;
+            case "en":
+                <div>
+                    <ul>
+                        <li>
+                            <p>@dl.DLCat</p>
+                        </li>
+                    </ul>
+                </div>
+                break;
+            default:
+                break;
+        }
+    }
+    <hr />
+    #endregion
+
+    //Personal description
+    #region Personal description
+    <h3>@Html.Label(RefWeb.Resources.Language.AboutMe):</h3>
+
+    foreach (RefWeb.Models.CVModels.mdlPersonalDesc pd in pdesc)
+    {
+        switch (RefWeb.Controllers.LanguageController._lang)
+        {
+            case "hu":
+                <div>
+                    <p>@pd.PDHun</p>
+                </div>
+                break;
+            case "en":
+                <div>
+                    <p>@pd.PDEng</p>
+                </div>
+                break;
+            default:
+                break;
+        }
+    }
+    <hr />
+    #endregion
+}
